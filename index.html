@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>陈工的世界 | 你好，我是陈工</title>
+<meta name="description" content="陈工的个人主页 — 鸿蒙应用开发、Web 全栈开发、技术咨询。原创音乐、摄影作品与开源项目。">
+<meta name="author" content="陈工">
+<meta name="keywords" content="陈工,个人主页,鸿蒙开发,HarmonyOS,Web开发,原创音乐,摄影,开源">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://MrChenDev.github.io/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="陈工的世界 | 你好，我是陈工">
+<meta property="og:description" content="鸿蒙应用开发、Web 全栈开发、技术咨询。原创音乐、摄影作品与开源项目。">
+<meta property="og:url" content="https://MrChenDev.github.io/">
+<meta property="og:image" content="https://MrChenDev.github.io/assets/avatar.jpg">
+<meta property="og:site_name" content="陈工的世界">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f7f7f8" media="(prefers-color-scheme: light)">
+<link rel="stylesheet" href="assets/style.css">
+
+<!-- 防闪烁：在解析样式前同步应用主题并标记 JS 可用 -->
+<script>
+(function () {
+  var d = document.documentElement;
+  d.classList.add('js');
+  try {
+    var t = localStorage.getItem('theme');
+    if (!t) t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+    d.setAttribute('data-theme', t);
+  } catch (e) {}
+})();
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<!-- ================= 导航 ================= -->
+<header class="nav">
+  <div class="container">
+    <a class="nav-brand" href="index.html" aria-label="陈工的世界 首页">
+      <img src="assets/logo.png" alt="陈工的世界">
+      <span>陈工的世界</span>
+    </a>
+
+    <nav class="nav-links" data-nav-links aria-label="主导航">
+      <a class="nav-link is-active" href="index.html" aria-current="page">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+        <span>首页</span>
+      </a>
+      <a class="nav-link" href="services.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg>
+        <span>服务提供</span>
+      </a>
+      <a class="nav-link" href="projects.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="2"></circle><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"></path><path d="M14 13h3"></path><path d="M7 13h3"></path></svg>
+        <span>项目基地</span>
+      </a>
+      <a class="nav-link" href="music.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+        <span>音乐小屋</span>
+      </a>
+      <a class="nav-link" href="photography.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.997 4a2 2 0 0 1 1.76 1.05l.486.9A2 2 0 0 0 18.003 7H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.997a2 2 0 0 0 1.759-1.048l.489-.904A2 2 0 0 1 10.004 4z"></path><circle cx="12" cy="13" r="3"></circle></svg>
+        <span>摄影展厅</span>
+      </a>
+      <a class="nav-link" href="contact.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
+        <span>联系我</span>
+      </a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="icon-btn" type="button" data-theme-toggle aria-label="切换到浅色模式"></button>
+      <button class="icon-btn nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="打开菜单">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================= Hero ================= -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path></svg>
+            欢迎来到我的世界
+          </p>
+
+          <h1 class="hero-title"><span class="gradient-text">你好</span></h1>
+
+          <p class="hero-bio">
+            2003 年，<em>INFJ-T</em>，金牛座，籍贯广东湛江，常驻广州。高中毕业于中山市第一中学，
+            本科大四在校创业者，物联网工程专业，工学学士学位。
+          </p>
+          <p class="hero-bio">
+            广州智尘梦科技工作室创始人兼 CEO&amp;CTO、原创音乐人、中国音乐著作权协会会员、
+            嵌入式软件开发工程师、鸿蒙开发者、高级软件架构师、鸿蒙布道师、业余摄影师。
+          </p>
+          <p class="hero-bio">
+            喜欢研究各种技术，喜欢创造，喜欢分享，喜欢写歌。
+            擅长领域：计算机技术、人工智能 + 物联网、Web3 区块链、法律、哲学、文学、音乐、
+            商业、经济、金融、心理学。
+          </p>
+
+          <div class="hero-social">
+            <a class="social-btn" href="https://github.com/MrChenDev" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+            </a>
+            <a class="social-btn" href="https://gitee.com/BartonNY" target="_blank" rel="noopener noreferrer" aria-label="Gitee">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.984 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.016 0zm6.09 5.333c.328 0 .593.266.592.593v1.482a.594.594 0 0 1-.593.592H9.777c-.982 0-1.778.796-1.778 1.778v5.63c0 .327.266.592.593.592h5.63c.982 0 1.778-.796 1.778-1.778v-.296a.593.593 0 0 0-.592-.593h-4.15a.592.592 0 0 1-.592-.592v-1.482a.593.593 0 0 1 .593-.592h6.815c.327 0 .593.265.593.592v3.408a4 4 0 0 1-4 4H5.926a.593.593 0 0 1-.593-.593V9.778a4.444 4.444 0 0 1 4.445-4.444h8.296Z"></path></svg>
+            </a>
+            <a class="social-btn" href="https://v.douyin.com/SFsKQrNk_3g/" target="_blank" rel="noopener noreferrer" aria-label="抖音">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"></path></svg>
+            </a>
+            <a class="social-btn" href="mailto:2969823274@qq.com" aria-label="发邮件">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
+            </a>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#explore">
+              向下探索
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg>
+            </a>
+            <a class="btn btn-ghost" href="contact.html">联系我</a>
+          </div>
+        </div>
+
+        <!-- 黑胶主视觉 -->
+        <div class="vinyl-stage" aria-hidden="true">
+          <div class="vinyl-glow"></div>
+          <div class="vinyl">
+            <div class="vinyl-label">
+              <img src="assets/avatar.jpg" alt="" loading="eager" decoding="async">
+            </div>
+            <div class="vinyl-hole"></div>
+          </div>
+          <div class="tonearm"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 探索 ================= -->
+  <section class="section" id="explore">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2 class="section-title">探索我的<span class="gradient-text">世界</span></h2>
+        <p class="section-sub">技术、音乐、影像与开源 —— 六年来我一直在做的事情。</p>
+      </div>
+
+      <div class="grid">
+
+        <article class="card reveal">
+          <div class="card-icon card-icon--blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg>
+          </div>
+          <h3 class="card-title">服务提供</h3>
+          <p class="card-desc">专业的鸿蒙应用开发、Web 全栈开发与技术解决方案，从创意到落地。</p>
+          <div class="card-tags">
+            <span class="tag">鸿蒙开发</span>
+            <span class="tag">Web 全栈</span>
+            <span class="tag">技术咨询</span>
+            <span class="tag">架构设计</span>
+          </div>
+          <p style="margin-top:20px"><a class="footer-link" href="services.html">了解更多 →</a></p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-icon card-icon--violet">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="2"></circle><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"></path><path d="M14 13h3"></path><path d="M7 13h3"></path></svg>
+          </div>
+          <h3 class="card-title">项目基地</h3>
+          <p class="card-desc">参与和维护的开源项目与实战案例，代码托管于 GitHub 与 Gitee。</p>
+          <div class="card-tags">
+            <span class="tag">开源项目</span>
+            <span class="tag">实战案例</span>
+            <span class="tag">代码仓库</span>
+            <span class="tag">技术博客</span>
+          </div>
+          <p style="margin-top:20px"><a class="footer-link" href="projects.html">了解更多 →</a></p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-icon card-icon--amber">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+          </div>
+          <h3 class="card-title">音乐小屋</h3>
+          <p class="card-desc">原创音乐作品展示，用旋律记录生活中的点点滴滴。</p>
+          <div class="card-tags">
+            <span class="tag">原创歌曲</span>
+            <span class="tag">音乐创作</span>
+            <span class="tag">网易云音乐</span>
+            <span class="tag">作品分享</span>
+          </div>
+          <p style="margin-top:20px"><a class="footer-link" href="music.html">了解更多 →</a></p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-icon card-icon--green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.997 4a2 2 0 0 1 1.76 1.05l.486.9A2 2 0 0 0 18.003 7H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.997a2 2 0 0 0 1.759-1.048l.489-.904A2 2 0 0 1 10.004 4z"></path><circle cx="12" cy="13" r="3"></circle></svg>
+          </div>
+          <h3 class="card-title">摄影展厅</h3>
+          <p class="card-desc">用镜头捕捉世界的美好，分享个人摄影作品集与后期记录。</p>
+          <div class="card-tags">
+            <span class="tag">风景摄影</span>
+            <span class="tag">人像摄影</span>
+            <span class="tag">城市记录</span>
+            <span class="tag">后期作品</span>
+          </div>
+          <p style="margin-top:20px"><a class="footer-link" href="photography.html">了解更多 →</a></p>
+        </article>
+
+      </div>
+
+      <div class="cta-band reveal" style="margin-top:32px">
+        <h2 class="cta-title">期待与您交流合作</h2>
+        <p class="cta-sub">共同创造更多可能 —— 在线咨询、商务合作、技术交流。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="contact.html">联系我</a>
+          <a class="btn btn-ghost" href="https://github.com/MrChenDev" target="_blank" rel="noopener noreferrer">GitHub 主页</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= 页脚 ================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3 class="footer-brand-title">陈工的世界</h3>
+        <p class="footer-brand-desc">
+          专注鸿蒙应用开发、Web 技术探索，以及用音乐和摄影记录生活的美好瞬间。
+        </p>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">快速导航</h4>
+        <ul class="footer-links">
+          <li><a class="footer-link" href="index.html">首页</a></li>
+          <li><a class="footer-link" href="services.html">服务提供</a></li>
+          <li><a class="footer-link" href="projects.html">项目基地</a></li>
+          <li><a class="footer-link" href="music.html">音乐小屋</a></li>
+          <li><a class="footer-link" href="photography.html">摄影展厅</a></li>
+          <li><a class="footer-link" href="contact.html">联系我</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">联系方式</h4>
+        <ul class="footer-links">
+          <li><a class="footer-link" href="mailto:2969823274@qq.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
+            2969823274@qq.com</a></li>
+          <li><a class="footer-link" href="https://github.com/MrChenDev" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+            GitHub</a></li>
+          <li><a class="footer-link" href="https://gitee.com/BartonNY" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.984 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.016 0zm6.09 5.333c.328 0 .593.266.592.593v1.482a.594.594 0 0 1-.593.592H9.777c-.982 0-1.778.796-1.778 1.778v5.63c0 .327.266.592.593.592h5.63c.982 0 1.778-.796 1.778-1.778v-.296a.593.593 0 0 0-.592-.593h-4.15a.592.592 0 0 1-.592-.592v-1.482a.593.593 0 0 1 .593-.592h6.815c.327 0 .593.265.593.592v3.408a4 4 0 0 1-4 4H5.926a.593.593 0 0 1-.593-.593V9.778a4.444 4.444 0 0 1 4.445-4.444h8.296Z"></path></svg>
+            Gitee</a></li>
+          <li><a class="footer-link" href="https://chendev.cn" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20"></path><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            chendev.cn</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span data-year>2026</span> 陈工的世界. All rights reserved.</p>
+      <p>本站为静态镜像版 · 原站 <a class="footer-link" href="https://chendev.cn" target="_blank" rel="noopener noreferrer" style="display:inline">chendev.cn</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js" defer></script>
+</body>
+</html>

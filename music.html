@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>音乐小屋 | 陈工的世界</title>
+<meta name="description" content="陈工（艺名楠弋）的原创音乐作品集：毕业那年花正开、四季如风、她来过、空恨、借来。">
+<meta name="author" content="陈工">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://MrChenDev.github.io/music.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="音乐小屋 | 陈工的世界">
+<meta property="og:description" content="原创音乐作品集，用旋律记录生活中的故事与情感。">
+<meta property="og:url" content="https://MrChenDev.github.io/music.html">
+<meta property="og:image" content="https://MrChenDev.github.io/assets/avatar.jpg">
+<meta property="og:site_name" content="陈工的世界">
+<meta property="og:locale" content="zh_CN">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f7f7f8" media="(prefers-color-scheme: light)">
+<link rel="stylesheet" href="assets/style.css">
+<script>
+(function () {
+  var d = document.documentElement;
+  d.classList.add('js');
+  try {
+    var t = localStorage.getItem('theme');
+    if (!t) t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+    d.setAttribute('data-theme', t);
+  } catch (e) {}
+})();
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<header class="nav">
+  <div class="container">
+    <a class="nav-brand" href="index.html" aria-label="陈工的世界 首页">
+      <img src="assets/logo.png" alt="陈工的世界">
+      <span>陈工的世界</span>
+    </a>
+    <nav class="nav-links" data-nav-links aria-label="主导航">
+      <a class="nav-link" href="index.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+        <span>首页</span>
+      </a>
+      <a class="nav-link" href="services.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg>
+        <span>服务提供</span>
+      </a>
+      <a class="nav-link" href="projects.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="2"></circle><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"></path><path d="M14 13h3"></path><path d="M7 13h3"></path></svg>
+        <span>项目基地</span>
+      </a>
+      <a class="nav-link is-active" href="music.html" aria-current="page">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+        <span>音乐小屋</span>
+      </a>
+      <a class="nav-link" href="photography.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.997 4a2 2 0 0 1 1.76 1.05l.486.9A2 2 0 0 0 18.003 7H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.997a2 2 0 0 0 1.759-1.048l.489-.904A2 2 0 0 1 10.004 4z"></path><circle cx="12" cy="13" r="3"></circle></svg>
+        <span>摄影展厅</span>
+      </a>
+      <a class="nav-link" href="contact.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
+        <span>联系我</span>
+      </a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" type="button" data-theme-toggle aria-label="切换到浅色模式"></button>
+      <button class="icon-btn nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="打开菜单">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="section" style="padding-top:calc(var(--nav-h) + 72px)">
+    <div class="container">
+
+      <div class="section-head">
+        <div class="section-icon section-icon--amber">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+        </div>
+        <h1 class="section-title"><span class="gradient-text gradient-text--amber">音乐小屋</span></h1>
+        <p class="section-sub">这里是我的原创音乐作品集，每一首歌都记录着生活中的故事与情感。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://music.163.com/#/artist?id=35831937&amp;userid=1581116392" target="_blank" rel="noopener noreferrer">
+            访问网易云音乐主页
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="stats reveal">
+        <div class="stat">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+          <div class="stat-value">7</div>
+          <div class="stat-label">原创作品</div>
+        </div>
+        <div class="stat">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 9-9"></path><path d="M3 3v9h9"></path></svg>
+          <div class="stat-value">40k+</div>
+          <div class="stat-label">总播放量</div>
+        </div>
+        <div class="stat">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path></svg>
+          <div class="stat-value">2k+</div>
+          <div class="stat-label">获赞数</div>
+        </div>
+        <div class="stat">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="3"></circle></svg>
+          <div class="stat-value">20</div>
+          <div class="stat-label">专辑数</div>
+        </div>
+      </div>
+
+      <div class="section-head reveal" style="margin-top:24px">
+        <h2 class="section-title" style="font-size:clamp(1.5rem,3vw,2rem)">热门作品</h2>
+        <p class="section-sub">艺名 <strong style="color:var(--text)">楠弋</strong> · 点击右侧图标前往网易云收听</p>
+      </div>
+
+      <div class="card reveal" style="padding:8px 8px">
+        <ul class="track-list">
+          <li class="track">
+            <span class="track-no">01</span>
+            <div class="track-main">
+              <p class="track-title">毕业那年花正开</p>
+              <p class="track-meta">作词 / 作曲：楠弋 · 编曲：R.Studio · 演唱：Bluerainbow.</p>
+            </div>
+            <span class="track-dur">4:15</span>
+            <a class="icon-btn" href="https://music.163.com/song?id=1859878016" target="_blank" rel="noopener noreferrer" aria-label="在网易云音乐收听 毕业那年花正开">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path></svg>
+            </a>
+          </li>
+          <li class="track">
+            <span class="track-no">02</span>
+            <div class="track-main">
+              <p class="track-title">四季如风</p>
+              <p class="track-meta">楠弋</p>
+            </div>
+            <span class="track-dur">4:40</span>
+            <a class="icon-btn" href="https://music.163.com/song?id=2012940091" target="_blank" rel="noopener noreferrer" aria-label="在网易云音乐收听 四季如风">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path></svg>
+            </a>
+          </li>
+          <li class="track">
+            <span class="track-no">03</span>
+            <div class="track-main">
+              <p class="track-title">她来过</p>
+              <p class="track-meta">楠弋</p>
+            </div>
+            <span class="track-dur">5:32</span>
+            <a class="icon-btn" href="https://music.163.com/song?id=2723458326" target="_blank" rel="noopener noreferrer" aria-label="在网易云音乐收听 她来过">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path></svg>
+            </a>
+          </li>
+          <li class="track">
+            <span class="track-no">04</span>
+            <div class="track-main">
+              <p class="track-title">空恨</p>
+              <p class="track-meta">楠弋 · 收录于专辑《空恨》</p>
+            </div>
+            <span class="track-dur">3:00</span>
+            <a class="icon-btn" href="https://music.163.com/song?id=2675589779" target="_blank" rel="noopener noreferrer" aria-label="在网易云音乐收听 空恨">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path></svg>
+            </a>
+          </li>
+          <li class="track">
+            <span class="track-no">05</span>
+            <div class="track-main">
+              <p class="track-title">借来</p>
+              <p class="track-meta">楠弋 · 收录于专辑《空恨》</p>
+            </div>
+            <span class="track-dur">2:37</span>
+            <a class="icon-btn" href="https://music.163.com/song?id=2675825227" target="_blank" rel="noopener noreferrer" aria-label="在网易云音乐收听 借来">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="cta-band reveal" style="margin-top:48px">
+        <h2 class="cta-title">喜欢我的音乐？</h2>
+        <p class="cta-sub">在网易云音乐关注我，第一时间获取新作品动态。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://music.163.com/#/artist?id=35831937&amp;userid=1581116392" target="_blank" rel="noopener noreferrer">网易云音乐关注</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3 class="footer-brand-title">陈工的世界</h3>
+        <p class="footer-brand-desc">专注鸿蒙应用开发、Web 技术探索，以及用音乐和摄影记录生活的美好瞬间。</p>
+      </div>
+      <div>
+        <h4 class="footer-heading">快速导航</h4>
+        <ul class="footer-links">
+          <li><a class="footer-link" href="index.html">首页</a></li>
+          <li><a class="footer-link" href="services.html">服务提供</a></li>
+          <li><a class="footer-link" href="projects.html">项目基地</a></li>
+          <li><a class="footer-link" href="music.html">音乐小屋</a></li>
+          <li><a class="footer-link" href="photography.html">摄影展厅</a></li>
+          <li><a class="footer-link" href="contact.html">联系我</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">联系方式</h4>
+        <ul class="footer-links">
+          <li><a class="footer-link" href="mailto:2969823274@qq.com">2969823274@qq.com</a></li>
+          <li><a class="footer-link" href="https://github.com/MrChenDev" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a class="footer-link" href="https://gitee.com/BartonNY" target="_blank" rel="noopener noreferrer">Gitee</a></li>
+          <li><a class="footer-link" href="https://chendev.cn" target="_blank" rel="noopener noreferrer">chendev.cn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span data-year>2026</span> 陈工的世界. All rights reserved.</p>
+      <p>本站为静态镜像版 · 原站 <a class="footer-link" href="https://chendev.cn" target="_blank" rel="noopener noreferrer" style="display:inline">chendev.cn</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js" defer></script>
+</body>
+</html>
