@@ -11,6 +11,14 @@ echo.
 
 set "PORT=8080"
 
+rem 端口被占用时自动退到 8081，避免新手卡在 Address already in use
+netstat -ano | findstr "LISTENING" | findstr ":8080 " >nul 2>nul
+if not errorlevel 1 (
+    set "PORT=8081"
+    echo [i] 端口 8080 已被占用，本次自动改用 8081
+    echo.
+)
+
 rem ---------- 优先 Python ----------
 where python >nul 2>nul
 if %errorlevel%==0 goto :use_python
