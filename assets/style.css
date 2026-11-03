@@ -498,6 +498,19 @@ ul { margin: 0; padding: 0; list-style: none; }
   font-size: .96rem;
 }
 
+/* 四宫格：宽屏 1x4，中屏 2x2，窄屏 1 列 —— 避免出现 3+1 的孤立卡片 */
+.grid.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1180px) {
+  .grid.grid-4 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .grid.grid-4 { grid-template-columns: 1fr; }
+}
+
 /* ---------- Cards ---------- */
 .grid {
   display: grid;
@@ -790,6 +803,14 @@ a.contact-item:hover {
 
 .hero-lead strong { color: var(--text); font-weight: 700; }
 
+.hero-lead .hero-name {
+  display: block;
+  font-size: 1.12em;
+  font-weight: 800;
+  letter-spacing: -.01em;
+  margin-bottom: 2px;
+}
+
 .stack-grid {
   display: grid;
   gap: 12px;
@@ -850,6 +871,21 @@ a.contact-item:hover {
 .world-card-sub { margin-top: 4px; font-size: .8rem; color: var(--text-faint); }
 .world-card svg { width: 20px; height: 20px; flex-shrink: 0; color: var(--text-dim); }
 
+
+/* ---------- 卡片内源码链接 ---------- */
+.card-link { margin-top: 16px; }
+
+.card-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: .84rem;
+  font-weight: 600;
+  color: var(--blue);
+  transition: gap .2s var(--ease), opacity .2s var(--ease);
+}
+
+.card-link a:hover { gap: 8px; opacity: .85; }
 /* ---------- Print ---------- */
 @media print {
   .nav, .footer, .hero-actions { display: none !important; }

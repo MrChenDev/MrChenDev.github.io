@@ -1,4 +1,4 @@
-# 陈工的世界 · GitHub Pages 静态版
+# Mr.ChenDev · GitHub Pages 静态版
 
 本仓库是 [chendev.cn](https://chendev.cn) 的**静态镜像版**，托管于 GitHub Pages。
 
@@ -50,7 +50,7 @@
 cd chendev-homepage
 git init
 git add .
-git commit -m "feat: 陈工的世界静态版，迁移自 chendev.cn"
+git commit -m "feat: Mr.ChenDev静态版，迁移自 chendev.cn"
 git branch -M main
 git remote add origin https://github.com/MrChenDev/MrChenDev.github.io.git
 git push -u origin main
